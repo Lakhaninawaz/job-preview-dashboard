@@ -30,7 +30,7 @@ export default function Navbar() {
 
     return (
         <nav className="bg-white w-full border-b md:border-0 z-50">
-            <div className="items-center justify-between px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+            <div className="items-center justify-between max-w-screen-xl mx-auto md:flex">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <Link href="/">
                         <h1 className="text-xl font-bold bg-gray-200 px-3 py-2 text-red-500">Logo</h1>
