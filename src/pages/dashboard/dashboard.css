@@ -1,0 +1,18 @@
+.underline-small{
+    display:inline-block;
+    position:relative;
+    
+  }
+  .underline-small::after{
+    content:'';
+    height:2px;
+    width:50%;
+    background:#DC4A2D;
+    position:absolute;
+  /*   left:calc(50% - 10%); */
+    margin:auto;
+    bottom:-15px;
+    left:0; 
+    right:0;
+     
+  }

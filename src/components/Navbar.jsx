@@ -52,7 +52,7 @@ export default function Navbar() {
                         {menus.map((item, idx) => (
                             <li
                                 key={idx}
-                                className={`flex gap-2 items-center justify-center  ${idx === isActive ? 'bg-red-500 text-white' : 'text-[#5D5D5D]'
+                                className={`flex gap-2 items-center justify-center  ${idx === isActive ? 'bg-red-500 text-white border-2 border-[#FED3CA]' : 'text-[#5D5D5D]'
                                 } px-5 py-3 rounded-full `}
                                 onClick={() => setIsActive(idx)}
                                 >

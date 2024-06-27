@@ -13,6 +13,7 @@ import { LuUsers } from "react-icons/lu";
 import { TbUserCheck } from "react-icons/tb";
 import { FiMessageSquare } from "react-icons/fi";
 import { IoEyeOutline } from "react-icons/io5";
+import "./dashboard.css"
 
 const Dashboard = () => {
     const [isActive, setIsActive] = useState(0)
@@ -26,7 +27,7 @@ const Dashboard = () => {
     return (
         <div>
             <div className="dashboard__header">
-                <ul className="items-center space-y-8 md:flex md:space-x-6 md:space-y-0 py-2 px-7 gap-5">
+                <ul className="items-center space-y-8 md:flex md:space-x-6 md:space-y-0 py-1 px-7 gap-5">
                     {menus.map((item, idx) => (
                         <li
                             key={idx}
@@ -34,7 +35,7 @@ const Dashboard = () => {
                                 } px-5 py-3 rounded-full`}
                             onClick={() => setIsActive(idx)}
                         >
-                            <Link href={item.path} className={`${idx === isActive ? 'text-red-500 underline under underline-offset-1' : ''}`}>{item.title}</Link>
+                            <Link href={item.path} className={`${idx === isActive ? 'underline-small text-red-500' : ''}`}>{item.title}</Link>
                         </li>
                     ))}
                 </ul>
@@ -97,7 +98,7 @@ const Dashboard = () => {
                 <div className="right px-8 py-5 w-1/4 h-full">
                     <div className="buttons flex justify-between">
                         <button className='bg-red-50 text-red-500 border border-red-500 px-6 rounded-xl flex gap-2 justify-center items-center'><RiDeleteBin6Line />Delete job</button>
-                        <button className='bg-red-500 text-white px-7 py-3 rounded-xl flex gap-2 justify-center items-center'><LuPencil />Edit job</button>
+                        <button className='bg-red-500 text-white border-2 border-[#FED3CA] px-7 py-3 rounded-xl flex gap-2 justify-center items-center'><LuPencil />Edit job</button>
                     </div>
                     <div className="more_details pt-5 px-2">
                         <div className="first_col flex justify-between items-center my-4">
