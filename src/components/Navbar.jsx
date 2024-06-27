@@ -16,10 +16,11 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { PiSuitcaseBold } from "react-icons/pi";
 import { FiMessageSquare } from "react-icons/fi";
 import { PiHandCoinsBold } from "react-icons/pi";
+import Image from "next/image"
 
 export default function Navbar() {
     const [dropdown, setDropdown] = React.useState(false)
-    const [isActive, setIsActive] = React.useState(-1)
+    const [isActive, setIsActive] = React.useState(0)
 
     const menus = [
         { title: "Jobs", path: "#", icon: <PiSuitcaseBold/> },
@@ -63,6 +64,9 @@ export default function Navbar() {
                 </div>
                 <DropdownMenu>
                     <DropdownMenuTrigger className="flex gap-2 items-center justify-center">
+                        <Image src={'/bell.png'} alt='company logo'
+          width={25}
+          height={25}/>
                     <Avatar>
   <AvatarImage src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJouUZ-6bZd7TC0fscphGWy39ykXdeZtt5SyEaWmEzIN1bVCuC" />
   <AvatarFallback>wait</AvatarFallback>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Footer () {
   return (
     <>
-  <div className="max-w-screen-xl px-16 py-4 mx-auto">
+  <div className="max-w-screen-xl px-20 mb-5 py-4 mx-auto">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
       <div>
         <div className="flex gap-2 items-center justify-center text-teal-300 sm:justify-start">
@@ -24,21 +24,21 @@ export default function Footer () {
         <ul className="space-y-4 mt-5 text-sm">
               <li>
                 <p className='text-[#6E6D6D] text-xs font-medium'>Company size</p>
-                <p className="text-[#3D3D3D] my-2 font-medium">
+                <p className="text-[#3D3D3D] my-2 font-semibold">
                 1k - 2k Employees
                 </p>
               </li>
 
               <li>
                 <p className='text-[#6E6D6D] text-xs font-medium'>Sector</p>
-                <p className="text-[#3D3D3D] my-2 font-medium">
+                <p className="text-[#3D3D3D] my-2 font-semibold">
                 Information Technology, Infrastructure
                 </p>
               </li>
 
               <li>
                 <p className='text-[#6E6D6D] text-xs font-medium'>Founded In</p>
-                <p className="text-[#3D3D3D] my-2 font-medium">
+                <p className="text-[#3D3D3D] my-2 font-semibold">
                 2019
                 </p>
               </li>
@@ -54,21 +54,21 @@ export default function Footer () {
             <ul className="space-y-4 mt-5 text-sm">
               <li>
                 <p className='text-[#6E6D6D] text-xs font-medium'>Type</p>
-                <p className="text-[#3D3D3D] my-2 font-medium">
+                <p className="text-[#3D3D3D] my-2 font-semibold">
                 Private
                 </p>
               </li>
 
               <li>
                 <p className='text-[#6E6D6D] text-xs font-medium'>Funding</p>
-                <p className="text-[#3D3D3D] my-2 font-medium">
+                <p className="text-[#3D3D3D] my-2 font-semibold">
                 Bootstrapped
                 </p>
               </li>
 
               <li>
                 <p className='text-[#6E6D6D] text-xs font-medium'>Founded By</p>
-                <p className="text-[#3D3D3D] my-2 font-medium">
+                <p className="text-[#3D3D3D] my-2 font-semibold">
                 Scott Farquhar, Mike Cannon-Brookes
                 </p>
               </li>

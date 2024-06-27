@@ -7,9 +7,15 @@ import { FaCoins } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { SiAdobeillustrator } from "react-icons/si";
 import { SiAdobexd } from "react-icons/si";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { LuPencil } from "react-icons/lu";
+import { LuUsers } from "react-icons/lu";
+import { TbUserCheck } from "react-icons/tb";
+import { FiMessageSquare } from "react-icons/fi";
+import { IoEyeOutline } from "react-icons/io5";
 
 const Dashboard = () => {
-    const [isActive, setIsActive] = useState()
+    const [isActive, setIsActive] = useState(0)
     const menus = [
         { title: "Job preview", path: "#", },
         { title: "Applicants", path: "#", },
@@ -35,8 +41,8 @@ const Dashboard = () => {
             </div>
             <hr />
             <div className="dashboard flex w-full h-screen">
-                <div className="left job_detail w-3/4">
-                    <div className="job_header px-16 py-4 pb-2 flex gap-5 items-center">
+                <div className="left job_detail w-3/4 h-fit border-r-2">
+                    <div className="job_header px-20 py-4 pb-2 flex gap-5 items-center">
                         <h1 className='text-3xl font-semibold'>Senior Product Designer</h1>
                         <p className='text-[#5D5D5D]'>• posted 2 days ago</p>
                         <p className='bg-green-200 text-green-600 font-semibold px-2 py-1 rounded-full text-[12px]'>• Open</p>
@@ -69,27 +75,51 @@ const Dashboard = () => {
                     <hr />
                     <div className="job_description px-16 py-4 mt-5 mb-5 text-sm" >
                         <p className='text-[#5D5D5D] pb-4'>About the job</p>
-                        <p>
+                        <p className='flex flex-col justify-center font-medium'>
                         1. Handle the UI/UX research design <br />
                         2. Work on researching on latest web applications designs & trends<br /> 
                         3. Work on conceptualizing and visualizing<br /> 
                         4. Work on creating graphics content and other graphic related works<br />
-<p className='my-1'>Benefits:</p>
-<li className='my-1'>Health insurance</li>
-<li className='my-1'>Provident Fund</li>
-<p className='my-1'>Schedule:</p>
-<li className='my-1'>Day shift</li>
-<p className='my-1'>Supplemental pay types:</p>
-<li className='my-1'>Performance bonus</li>
-<li className='my-1'>Yearly bonus</li>
-<p className='my-1'>Work Location: In person</p>
+<span className='my-1 block'>Benefits:</span>
+<span className='my-1 block'>• Health insurance</span>
+<span className='my-1'>• Provident Fund</span>
+<span className='my-1 block'>Schedule:</span>
+<span className='my-1'>• Day shift</span>
+<span className='my-1 block'>Supplemental pay types:</span>
+<span className='my-1'>• Performance bonus</span>
+<span className='my-1'>• Yearly bonus</span>
+<span className='my-1 block'>Work Location: In person</span>
                         </p>
                     </div>
                     <hr />
                     <Footer />
                 </div>
-                <div className="right w-1/4 h-full bg-blue-500">
-
+                <div className="right px-8 py-5 w-1/4 h-full">
+                    <div className="buttons flex justify-between">
+                        <button className='bg-red-50 text-red-500 border border-red-500 px-6 rounded-xl flex gap-2 justify-center items-center'><RiDeleteBin6Line />Delete job</button>
+                        <button className='bg-red-500 text-white px-7 py-3 rounded-xl flex gap-2 justify-center items-center'><LuPencil />Edit job</button>
+                    </div>
+                    <div className="more_details pt-5 px-2">
+                        <div className="first_col flex justify-between items-center my-4">
+                            <p className='text-[#4F4F4F] flex items-center justify-center gap-2'><LuUsers />Applicants</p>
+                            <h1 className='font-extrabold text-[#3D3D3D]'>400</h1>
+                        </div>
+                        <hr />
+                        <div className="second_col flex justify-between items-center my-4">
+                            <p className='text-[#4F4F4F] flex items-center justify-center gap-2'><TbUserCheck />Matches</p>
+                            <h1 className='font-extrabold text-[#3D3D3D]'>100</h1>
+                        </div>
+                        <hr />
+                        <div className="third_col flex justify-between items-center my-4">
+                            <p className='text-[#4F4F4F] flex items-center justify-center gap-2'><FiMessageSquare />Messages</p>
+                            <h1 className='font-extrabold text-[#3D3D3D]'>147</h1>
+                        </div>
+                        <hr />
+                        <div className="fourth_col flex justify-between items-center my-4">
+                            <p className='text-[#4F4F4F] flex items-center justify-center gap-2'><IoEyeOutline />Views</p>
+                            <h1 className='font-extrabold text-[#3D3D3D]'>800</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
